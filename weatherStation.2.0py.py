@@ -11,7 +11,7 @@ ds_sensor = ds18x20.DS18X20(onewire.OneWire(ds_pin))
 roms = ds_sensor.scan()
 
 if not roms:
-    print("Warning, bcuz i just want to /j")
+    print("Warning, just to scare you /j")
 
 np = neopixel.NeoPixel(machine.Pin(LED_pin), Num_LEDS)
 cold = (0, 0, 255)
